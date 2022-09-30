@@ -13,6 +13,11 @@ input {
   display: none;
 }
 
+label:hover {
+  cursor: pointer;
+  color: hsl(14, 88%, 65%);
+}
+
 .card {
   background: white;
   display: flex;
@@ -45,6 +50,14 @@ input {
   display: flex;
   justify-content: space-between;
   padding: 0.8rem 0;
+  font-weight: 400;
+}
+
+.answer {
+  padding-bottom: 0.8rem;
+}
+
+.faq-block {
   border-bottom: 1px solid hsl(240, 5%, 91%);
 }
 
