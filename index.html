@@ -1,40 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+    <script defer scr="index.js"></script>
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
-
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <body>
+    <div class="card">
+      <div class="image-section container">
+        <div class="image-background-cover">
+          <div id="pattern-background-img"></div>
+          <div id="woman-online-desktop-img"></div>
+        </div>
+        <img src="./images/illustration-box-desktop.svg" alt="" />
+        <!-- <img src="" alt="" /> -->
+        <!-- <img src="./images/illustration-woman-online-desktop.svg" alt="" /> -->
+      </div>
+      <div class="FAQ-section container">
+        <div class="FAQ-title">FAQ</div>
+        <label for="faq-1" class="question">
+          <div>How many team members can I invite?</div>
+          <img src="./images/icon-arrow-down.svg" alt="" />
+        </label>
+        <input type="checkbox" name="faq-1" id="faq-1" />
+        <div class="answer hidden">
+          You can invite up to 2 additional users on the Free plan. There is no
+          limit on team members for the Premium plan.
+        </div>
+        <label for="faq-2" class="question">
+          <div>What is the maximum file upload size?</div>
+          <img src="./images/icon-arrow-down.svg" alt="" />
+        </label>
+        <input type="checkbox" name="faq-2" id="faq-2" />
+        <div class="answer hidden">
+          No more than 2GB. All files in your account must fit your allotted
+          storage space.
+        </div>
+        <label for="faq-3" class="question">
+          <div>How do I reset my password?</div>
+          <img src="./images/icon-arrow-down.svg" alt="" />
+        </label>
+        <input type="checkbox" name="faq-3" id="faq-3" />
+        <div class="answer hidden">
+          Click “Forgot password” from the login page or “Change password” from
+          your profile page. A reset link will be emailed to you.
+        </div>
+        <label for="faq-4" class="question">
+          <div>Can I cancel my subscription?</div>
+          <img src="./images/icon-arrow-down.svg" alt="" />
+        </label>
+        <input type="checkbox" name="faq-4" id="faq-4" />
+        <div class="answer hidden">
+          Yes! Send us a message and we’ll process your request no questions
+          asked.
+        </div>
+        <label for="faq-5" class="question">
+          <div>Do you provide additional support?</div>
+          <img src="./images/icon-arrow-down.svg" alt="" />
+        </label>
+        <input type="checkbox" name="faq-5" id="faq-5" />
+        <div class="answer hidden">
+          Chat and email support is available 24/7. Phone lines are open during
+          normal business hours.
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
