@@ -103,8 +103,22 @@ label:hover {
     margin-left: calc(-5rem - 95.5px);
     margin-top: calc(-5rem);
     transform: translateY(100%);
+    animation: boxUpDown 2s linear infinite;
   }
 }
+
+@keyframes boxUpDown {
+  0% {
+    transform: translateY(calc(100% + 15px));
+  }
+  50% {
+    transform: translateY(calc(100% - 5px));
+  }
+  100% {
+    transform: translateY(calc(100% + 15px));
+  }
+}
+
 :root {
   --mobile-image-size: 77vw;
 }
@@ -141,6 +155,7 @@ label:hover {
     background-repeat: no-repeat;
     z-index: 1;
     position: absolute;
+    animation: desktopImgUpDown 2s linear infinite;
   }
 
   .image-background-cover {
@@ -160,5 +175,17 @@ label:hover {
 
   #box-img {
     display: none;
+  }
+}
+
+@keyframes desktopImgUpDown {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
   }
 }
