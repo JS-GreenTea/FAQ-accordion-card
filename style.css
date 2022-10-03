@@ -1,0 +1,188 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+}
+
+#container {
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 375px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    min-height: 50%;
+    margin: 10% 5%;
+  }
+
+  #image-div{
+    height: 100px;
+    width: 70%;
+    padding:0 15%;
+  }
+
+  #bg-pattern {
+    background-image: url("./images/bg-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    height: 100px;
+    background-size: contain;
+    position: relative;
+    top:-200%
+  }
+
+  #woman-online {
+    background-image: url("./images/illustration-woman-online-mobile.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+    position: relative;
+    object-fit: cover;
+    top:-100%
+  }
+
+  #text-div {
+    width: 85%;
+    height: 35%;
+    padding: 7.5%;
+    text-align: left;
+  }
+
+  #title{
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 376px) {
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60%;
+    width: 60%;
+
+    background-image: url("./images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position-x: -55em;
+    background-position-y: -25em;
+  }
+
+  #image-div {
+    width: 40%;
+    height: 400px;
+    padding: 0;
+    position: relative;
+  }
+
+  #text-div {
+    width: 60%;
+    height: 100%;
+    padding: 80px;
+  }
+
+
+  #woman-online {
+    width: 30em;
+    height: 30em;
+    background-image: url('./images/illustration-woman-online-desktop.svg');
+    z-index: 2;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 3em;
+    right: -3em;
+  }
+
+  #box {
+    width: 7em;
+    height: 7em;
+    background-image: url('./images/illustration-box-desktop.svg');
+    background-size: contain;
+    background-position: center;
+
+    position: absolute;
+    top: 15.5em;
+    left: 2em;
+  }
+
+  /*#bg-pattern {*/
+  /*  width: 300px;*/
+  /*  height: 300px;*/
+  /*  background-image: url('./images/bg-pattern-desktop.svg');*/
+  /*  background-size: cover;*/
+  /*  z-index: 1;*/
+  /*}*/
+}
+
+#title {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+details{
+  color: hsl(237, 12%, 33%);
+}
+
+summary {
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+details[open]  {
+  color:  hsl(237, 12%, 33%);;
+}
+
+details[open] summary  {
+  color: black;
+  font-weight: 600;
+}
+
+details summary:after {
+  content: url("./images/icon-arrow-down.svg");
+  padding-left: 5px;
+  float: right;
+}
+
+details[open] summary:after {
+  transform: rotateX(180deg);
+}
+
+details summary::marker {
+  display: none;
+  content: "";
+}
+
+  /* details > summary::marker {
+    content: url("./images/icon-arrow-down.svg");
+  }
+
+  details[open] > summary::marker {
+    content: url("./images/icon-arrow-down.svg");
+    transform: rotate(180deg);
+  } */
