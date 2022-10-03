@@ -20,9 +20,4 @@
 
 ## 보너스
 
-- [ ] 자바스크립트를 제거한다
-
-- [ ] View the optimal layout for the component depending on their device's screen size
-- [ ] See hover states for all interactive elements on the page
-- [ ] Hide/Show the answer to a question when the question is clicked
-- [ ] **Bonus**: Complete the challenge without using JavaScript
+- [x] 자바스크립트를 제거한다

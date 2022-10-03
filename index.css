@@ -17,6 +17,18 @@ input {
   display: none;
 }
 
+/* 자바스크립트 없이 구동*/
+input[type="checkbox"]:checked ~ .answer {
+  display: block;
+}
+input[type="checkbox"]:checked ~ label {
+  font-weight: 700 !important;
+  color: hsl(237, 12%, 33%) !important;
+}
+input[type="checkbox"]:checked + .question > img {
+  transform: rotate(180deg);
+}
+
 label:hover {
   cursor: pointer;
   color: hsl(14, 88%, 65%);
@@ -46,10 +58,6 @@ label:hover {
   color: hsl(237, 12%, 33%);
 }
 
-.hidden {
-  display: none !important;
-}
-
 .question {
   display: flex;
   justify-content: space-between;
@@ -61,6 +69,7 @@ label:hover {
 }
 .answer {
   padding-bottom: 0.8rem;
+  display: none;
 }
 
 .faq-block {
