@@ -130,14 +130,6 @@ body {
     top: 15.5em;
     left: 2em;
   }
-
-  /*#bg-pattern {*/
-  /*  width: 300px;*/
-  /*  height: 300px;*/
-  /*  background-image: url('./images/bg-pattern-desktop.svg');*/
-  /*  background-size: cover;*/
-  /*  z-index: 1;*/
-  /*}*/
 }
 
 #title {
@@ -177,12 +169,3 @@ details summary::marker {
   display: none;
   content: "";
 }
-
-  /* details > summary::marker {
-    content: url("./images/icon-arrow-down.svg");
-  }
-
-  details[open] > summary::marker {
-    content: url("./images/icon-arrow-down.svg");
-    transform: rotate(180deg);
-  } */
